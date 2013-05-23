@@ -10,17 +10,18 @@ namespace generarConsecutivo
 		private int folio;
 		      
 		[WebMethod]
-        public int generarFolio()
-        {
+        	public int generarFolio()
+        	{
  			folio = folios.generarConsecutivo;
  			folios.actualizarConsecutivo();
-        	return folio;
-        }
+        		return folio;
+        	}
         
-        [WebMethod]
-        public bool enLinea()
-        {
-        	return true;
-        }
+        	///metodo para revisar si el server esta en linea (true esta en linea)
+        	[WebMethod]
+        	public bool enLinea()
+        	{
+        		return true;
+        	}
 	}
 }
